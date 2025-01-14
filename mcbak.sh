@@ -3,6 +3,7 @@
 #MINECRAFT_SERVER_BACKUP_PROGRAM
 FILE="server_"$(date +%Y%m%d%H%M)".zip"
 path="/path/${FILE}" #存放文件的路径
+filepath=
 if [ -f /bin/apt ];
 then
 apt update
@@ -11,8 +12,8 @@ elif [ -f /bin/yum ];
 then
 yum update
 yum install zip unzip -y
-else
+else;
 echo "system not supported"
 exit
 fi
-zip -r $path /minecraft/*
+zip -r $path $filepath/*
