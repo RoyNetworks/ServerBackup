@@ -9,8 +9,6 @@ A Linux Script To Backup Files
 <br>
 ``curl https://cn-nb1.rains3.com/rs2/mcbak.sh -O``
 <br>
-``curl http://mc.roycraft.cn:8000/mcbak.sh -O``
-<br>
 ``curl http://110.40.40.165:8000/mcbak.sh -O``
 <br>
 Edit the /path in $path to store backup files for you
